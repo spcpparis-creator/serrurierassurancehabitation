@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serrurier Assurance Habitation - Intervention France 24/7</title>
+    <meta name="description" content="Serrurier d'urgence 24/7 en France. Facture conforme pour remboursement assurance habitation. Intervention rapide pour porte claquée, serrure cassée.">
+    <link rel="canonical" href="https://serrurierassurancehabitation.fr">
+    <style>
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #0066cc;
+            --secondary-color: #ff6b00;
+            --success-color: #28a745;
+            --dark: #1a1a1a;
+            --gray: #666;
+            --light-gray: #f5f5f5;
+            --white: #ffffff;
+            --shadow: 0 2px 10px rgba(0,0,0,0.1);
+            --shadow-lg: 0 4px 20px rgba(0,0,0,0.15);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--white);
+        }
+
+        /* Header fixe */
+        .header-fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+            line-height: 1.2;
+        }
+
+        .header-phone {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .phone-link {
+            background: var(--secondary-color);
+            color: var(--white);
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: background 0.3s;
+            white-space: nowrap;
+        }
+
+        .phone-link:hover {
+            background: #e55e00;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #004a99 100%);
+            color: var(--white);
+            padding: 120px 1rem 60px;
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .hero-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        .hero-feature {
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+
+        .cta-primary {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: var(--white);
+            padding: 1.2rem 3rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(255,107,0,0.4);
+            margin-bottom: 1rem;
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255,107,0,0.5);
+        }
+
+        .urgence-badge {
+            display: inline-block;
+            background: var(--success-color);
+            color: var(--white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        /* Section Professionnel */
+        .professional {
+            background: var(--white);
+            padding: 60px 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .professional-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .professional-image {
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .professional-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .professional-content h2 {
+            font-size: 2.2rem;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .professional-content p {
+            font-size: 1.1rem;
+            color: var(--gray);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .professional-features {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .professional-features li {
+            padding: 0.8rem 0 0.8rem 2.5rem;
+            position: relative;
+            font-size: 1.05rem;
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        .professional-features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success-color);
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .professional-cta {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: var(--white);
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(255,107,0,0.4);
+            margin-top: 1rem;
+        }
+
+        .professional-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255,107,0,0.5);
+        }
+
+        /* Bannière Assurances */
+        .insurance-banner {
+            background: var(--white);
+            padding: 40px 1rem;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .insurance-intro {
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--gray);
+            margin-bottom: 2rem;
+        }
+
+        .insurance-logos {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        .insurance-item {
+            background: var(--white);
+            padding: 1.2rem 1rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border: 2px solid #e0e0e0;
+            transition: all 0.3s;
+            letter-spacing: 0.5px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .insurance-item:hover {
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-3px);
+        }
+
+        /* Couleurs des marques d'assurance */
+        .insurance-item[data-brand="axa"] {
+            color: #00008f;
+        }
+
+        .insurance-item[data-brand="allianz"] {
+            color: #003781;
+        }
+
+        .insurance-item[data-brand="groupama"] {
+            color: #c8102e;
+        }
+
+        .insurance-item[data-brand="maif"] {
+            color: #006f40;
+        }
+
+        .insurance-item[data-brand="maaf"] {
+            color: #e2001a;
+        }
+
+        .insurance-item[data-brand="matmut"] {
+            color: #009fe3;
+        }
+
+        .insurance-item[data-brand="mma"] {
+            color: #0066cc;
+        }
+
+        .insurance-item[data-brand="gmf"] {
+            color: #003d7a;
+        }
+
+        .insurance-item[data-brand="macif"] {
+            color: #e30613;
+        }
+
+        .insurance-item[data-brand="generali"] {
+            color: #b31b34;
+        }
+
+        .insurance-item[data-brand="aviva"] {
+            color: #ffcc00;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .insurance-item[data-brand="swisslife"] {
+            color: #0033a1;
+        }
+
+        .insurance-item[data-brand="ca"] {
+            color: #008c5a;
+        }
+
+        .insurance-item[data-brand="ag2r"] {
+            color: #004c8d;
+        }
+
+        .insurance-item[data-brand="pacifica"] {
+            color: #008c5a;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Section commune */
+        section {
+            padding: 60px 1rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--dark);
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            font-size: 1.1rem;
+        }
+
+        /* Pourquoi nous choisir */
+        .why-us {
+            background: var(--light-gray);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .why-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .why-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .why-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .why-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            color: var(--primary-color);
+        }
+
+        .why-card p {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        /* Assurance Section */
+        .assurance {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .assurance-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow-lg);
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .assurance-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .assurance-content ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .assurance-content li {
+            padding: 0.5rem 0 0.5rem 2rem;
+            position: relative;
+            color: var(--dark);
+        }
+
+        .assurance-content li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .info-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1.2rem;
+            margin-top: 1.5rem;
+            border-radius: 5px;
+        }
+
+        .info-box strong {
+            color: #856404;
+        }
+
+        /* Interventions */
+        .interventions-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .intervention-card {
+            background: var(--white);
+            padding: 1.8rem;
+            border-radius: 10px;
+            border: 2px solid var(--light-gray);
+            transition: border-color 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .intervention-card:hover {
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow);
+        }
+
+        .intervention-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .intervention-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+
+        .intervention-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        /* Couverture nationale */
+        .coverage {
+            background: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .coverage .section-title {
+            color: var(--white);
+        }
+
+        .coverage-content {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .coverage-content strong {
+            font-size: 1.2rem;
+            display: block;
+            margin: 1.5rem 0;
+        }
+
+        /* Réassurance */
+        .trust {
+            background: var(--light-gray);
+        }
+
+        /* Section Avis Clients */
+        .reviews {
+            background: var(--white);
+            padding: 60px 1rem;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .review-card {
+            background: var(--white);
+            padding: 1.8rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--primary-color);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .review-stars {
+            color: #ffc107;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .review-text {
+            font-style: italic;
+            color: var(--gray);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        .review-author {
+            font-weight: 600;
+            color: var(--dark);
+            font-size: 0.95rem;
+        }
+
+        .review-location {
+            color: var(--gray);
+            font-size: 0.85rem;
+        }
+
+        .review-date {
+            color: var(--gray);
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Section Tarifs */
+        .pricing {
+            background: var(--white);
+            padding: 60px 1rem;
+        }
+
+        .pricing-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            color: var(--gray);
+            font-size: 1rem;
+        }
+
+        .pricing-table-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            overflow-x: auto;
+            box-shadow: var(--shadow-lg);
+            border-radius: 10px;
+        }
+
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--white);
+        }
+
+        .pricing-table thead {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #004a99 100%);
+            color: var(--white);
+        }
+
+        .pricing-table th {
+            padding: 1.2rem 1.5rem;
+            text-align: left;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .pricing-table th:last-child {
+            text-align: right;
+        }
+
+        .pricing-table td {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .pricing-table td:first-child {
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .pricing-table td:last-child {
+            text-align: right;
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+
+        .pricing-table tbody tr:hover {
+            background: var(--light-gray);
+        }
+
+        .pricing-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .pricing-note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1.2rem;
+            margin-top: 2rem;
+            border-radius: 5px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .pricing-note strong {
+            color: #856404;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-note ul {
+            list-style: none;
+            margin-top: 0.8rem;
+        }
+
+        .pricing-note li {
+            padding: 0.3rem 0 0.3rem 1.5rem;
+            position: relative;
+            color: #856404;
+        }
+
+        .pricing-note li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .trust-item {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .trust-item-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .trust-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            color: var(--primary-color);
+        }
+
+        .testimonial {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            margin-top: 1rem;
+            font-style: italic;
+            color: var(--gray);
+        }
+
+        .testimonial-author {
+            font-style: normal;
+            font-weight: 600;
+            color: var(--dark);
+            margin-top: 0.8rem;
+        }
+
+        /* FAQ */
+        .faq {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 1.5rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 1.5rem;
+            color: var(--dark);
+            line-height: 1.8;
+            border-top: 1px solid var(--light-gray);
+        }
+
+        /* CTA Final */
+        .cta-final {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #e55e00 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 60px 1rem;
+        }
+
+        .cta-final h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-final p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-final .phone-link {
+            background: var(--white);
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            padding: 1.2rem 3rem;
+        }
+
+        .cta-final .phone-link:hover {
+            background: var(--light-gray);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            padding: 40px 1rem 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: var(--white);
+        }
+
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+
+        /* Bouton d'appel flottant mobile */
+        .floating-call {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 999;
+            width: calc(100% - 2rem);
+            max-width: 400px;
+        }
+
+        .floating-call .phone-link {
+            display: block;
+            text-align: center;
+            width: 100%;
+            font-size: 1.2rem;
+            padding: 1rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .phone-link {
+                padding: 0.6rem 1rem;
+                font-size: 1rem;
+            }
+
+            .cta-primary {
+                padding: 1rem 2rem;
+                font-size: 1.1rem;
+            }
+
+            .header-fixed {
+                padding: 0.7rem 0;
+            }
+
+            .logo {
+                font-size: 1rem;
+                max-width: 150px;
+            }
+
+            .floating-call {
+                display: block;
+            }
+
+            .hero {
+                padding: 100px 1rem 40px;
+            }
+
+            section {
+                padding: 40px 1rem;
+            }
+
+            .assurance-content {
+                padding: 1.5rem;
+            }
+
+            .insurance-logos {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
+            .insurance-item {
+                padding: 0.8rem 0.5rem;
+                font-size: 0.9rem;
+                height: 70px;
+            }
+
+            .insurance-intro {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .interventions-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .professional-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .professional-content h2 {
+                font-size: 1.8rem;
+            }
+
+            .professional-content p {
+                font-size: 1rem;
+            }
+
+            .pricing-table th,
+            .pricing-table td {
+                padding: 0.8rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .pricing-table th {
+                font-size: 1rem;
+            }
+
+            .pricing-note {
+                margin-top: 1.5rem;
+                padding: 1rem;
+            }
+        }
+
+        /* Schema.org pour FAQ */
+        script[type="application/ld+json"] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header fixe -->
+    <header class="header-fixed">
+        <div class="header-container">
+            <a href="/" class="logo">Serrurier Assurance Habitation</a>
+            <div class="header-phone">
+                <a href="tel:0972497249" class="phone-link">📞 09 72 49 72 49</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Serrurier Assurance Habitation – Intervention Rapide Près de Chez Vous</h1>
+            <p class="hero-subtitle">Serrurier professionnel disponible 24h/24 et 7j/7 proche de votre domicile. Facture détaillée conforme pour votre assurance habitation.</p>
+            
+            <div class="hero-features">
+                <span class="hero-feature">✓ Disponible 24/7</span>
+                <span class="hero-feature">✓ Intervention rapide</span>
+                <span class="hero-feature">✓ Facture assurance</span>
+                <span class="hero-feature">✓ Près de chez vous</span>
+            </div>
+
+            <a href="tel:0972497249" class="cta-primary">📞 Appeler maintenant : 09 72 49 72 49</a>
+            
+            <div class="urgence-badge">🚨 Urgence serrurerie ? Nous intervenons rapidement</div>
+        </div>
+    </section>
+
+    <!-- Section Professionnel -->
+    <section class="professional">
+        <div class="professional-container">
+            <div class="professional-image">
+                <img src="serrurier-professionnel.jpg" alt="Serrurier professionnel devant véhicule d'intervention Serrurier Assurance Habitation">
+            </div>
+            <div class="professional-content">
+                <h2>Des professionnels certifiés à votre service</h2>
+                <p>Nos serruriers qualifiés interviennent rapidement partout en France avec des véhicules entièrement équipés. Nous vous garantissons un service professionnel et une facture conforme pour votre assurance habitation.</p>
+                
+                <ul class="professional-features">
+                    <li>Serruriers certifiés et expérimentés</li>
+                    <li>Véhicules équipés avec stock complet</li>
+                    <li>Intervention rapide 24h/24 et 7j/7</li>
+                    <li>Facture détaillée pour votre assurance</li>
+                    <li>Devis gratuit avant intervention</li>
+                    <li>Tarifs transparents et respectés</li>
+                </ul>
+
+                <a href="tel:0972497249" class="professional-cta">📞 Appeler le 09 72 49 72 49</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi nous choisir -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <h2 class="section-title">Pourquoi choisir notre service de serrurerie ?</h2>
+            <p class="section-subtitle">Des professionnels qualifiés à votre service pour toutes vos urgences de serrurerie</p>
+            
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">⏰</div>
+                    <h3>Disponible 24h/24 – 7j/7</h3>
+                    <p>Notre service d'urgence est disponible jour et nuit, tous les jours de l'année, y compris les week-ends et jours fériés.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">👨‍🔧</div>
+                    <h3>Serruriers certifiés</h3>
+                    <p>Nos serruriers sont qualifiés et expérimentés. Ils interviennent avec professionnalisme pour tous vos problèmes de serrurerie.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">📄</div>
+                    <h3>Facture conforme assurance</h3>
+                    <p>Nous vous fournissons une facture détaillée et conforme aux exigences de votre assurance habitation pour faciliter vos démarches.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">🇫🇷</div>
+                    <h3>Serrurier proche de vous</h3>
+                    <p>Notre réseau de serruriers locaux vous garantit une intervention rapide. Un professionnel proche de chez vous intervient rapidement.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">💰</div>
+                    <h3>Transparence des prix</h3>
+                    <p>Devis clair avant intervention. Pas de surprise sur la facture. Vous connaissez le prix avant que nous commencions.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">⚡</div>
+                    <h3>Intervention rapide</h3>
+                    <p>Nous comprenons l'urgence de votre situation. Grâce à nos serruriers locaux, nous intervenons rapidement près de chez vous.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serrurerie & Assurance Habitation -->
+    <section class="assurance" id="assurance">
+        <div class="container">
+            <h2 class="section-title">Serrurerie et Assurance Habitation</h2>
+            <div class="assurance-content">
+                <h3>Comment fonctionne la prise en charge par l'assurance habitation ?</h3>
+                
+                <p>Votre assurance habitation peut prendre en charge tout ou partie des frais de serrurier dans certaines situations. Il est important de bien comprendre les conditions de votre contrat.</p>
+
+                <h3 style="margin-top: 2rem;">Les cas généralement couverts :</h3>
+                <ul>
+                    <li>Vol ou tentative d'effraction avec dégâts sur la serrure</li>
+                    <li>Perte ou vol de clés (selon votre contrat)</li>
+                    <li>Serrure endommagée suite à un sinistre couvert</li>
+                    <li>Porte claquée (si option "assistance" dans votre contrat)</li>
+                </ul>
+
+                <h3 style="margin-top: 2rem;">Nos engagements pour votre assurance :</h3>
+                <ul>
+                    <li>Facture détaillée avec toutes les informations nécessaires</li>
+                    <li>Description précise de l'intervention réalisée</li>
+                    <li>Tarification claire et justifiée</li>
+                    <li>Respect des procédures d'urgence</li>
+                </ul>
+
+                <div class="info-box">
+                    <strong>⚠️ Information importante :</strong> Le remboursement dépend de votre contrat d'assurance habitation et des circonstances de l'intervention. Nous ne pouvons garantir la prise en charge par votre assureur. Nous vous conseillons de contacter votre assurance avant ou immédiatement après notre intervention pour connaître vos droits et les démarches à suivre.
+                </div>
+
+                <p style="margin-top: 1.5rem;"><strong>Notre rôle :</strong> Nous vous fournissons tous les documents nécessaires pour constituer votre dossier auprès de votre assurance. La décision de remboursement appartient exclusivement à votre compagnie d'assurance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos interventions -->
+    <section class="interventions" id="interventions">
+        <div class="container">
+            <h2 class="section-title">Nos interventions de serrurerie</h2>
+            <p class="section-subtitle">Nos serruriers interviennent pour tous types de problèmes de serrurerie</p>
+            
+            <div class="interventions-grid">
+                <div class="intervention-card">
+                    <div class="intervention-icon">🚪</div>
+                    <h3>Porte claquée</h3>
+                    <p>Ouverture de porte claquée sans clé. Intervention rapide et sans casse si possible.</p>
+                </div>
+
+                <div class="intervention-card">
+                    <div class="intervention-icon">🔒</div>
+                    <h3>Porte verrouillée</h3>
+                    <p>Ouverture de porte fermée à clé, que vous ayez perdu vos clés ou qu'elles soient bloquées à l'intérieur.</p>
+                </div>
+
+                <div class="intervention-card">
+                    <div class="intervention-icon">🔧</div>
+                    <h3>Serrure cassée</h3>
+                    <p>Réparation ou remplacement de serrure endommagée ou défectueuse.</p>
+                </div>
+
+                <div class="intervention-card">
+                    <div class="intervention-icon">🔑</div>
+                    <h3>Clé perdue ou volée</h3>
+                    <p>Ouverture de porte et changement de serrure suite à une perte ou un vol de clés.</p>
+                </div>
+
+                <div class="intervention-card">
+                    <div class="intervention-icon">⚠️</div>
+                    <h3>Effraction</h3>
+                    <p>Sécurisation d'urgence et remplacement de serrure après tentative d'effraction ou cambriolage.</p>
+                </div>
+
+                <div class="intervention-card">
+                    <div class="intervention-icon">🛠️</div>
+                    <h3>Remplacement de serrure</h3>
+                    <p>Installation de serrure neuve, changement de cylindre ou mise aux normes de sécurité.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Tarifs -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Nos tarifs de serrurerie</h2>
+            <p class="pricing-intro">Tarifs indicatifs moyens pour une intervention de serrurerie. Le prix final dépend de votre situation et du matériel utilisé. Devis gratuit avant intervention.</p>
+            
+            <div class="pricing-table-wrapper">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Prestation</th>
+                            <th>Tarif indicatif</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ouverture de porte claquée (journée)</td>
+                            <td>70€ - 120€</td>
+                        </tr>
+                        <tr>
+                            <td>Ouverture de porte claquée (nuit/weekend)</td>
+                            <td>120€ - 180€</td>
+                        </tr>
+                        <tr>
+                            <td>Ouverture de porte verrouillée simple</td>
+                            <td>90€ - 150€</td>
+                        </tr>
+                        <tr>
+                            <td>Ouverture de porte blindée</td>
+                            <td>150€ - 300€</td>
+                        </tr>
+                        <tr>
+                            <td>Ouverture coffre-fort</td>
+                            <td>200€ - 500€</td>
+                        </tr>
+                        <tr>
+                            <td>Changement de cylindre standard</td>
+                            <td>80€ - 150€</td>
+                        </tr>
+                        <tr>
+                            <td>Changement de cylindre haute sécurité</td>
+                            <td>150€ - 300€</td>
+                        </tr>
+                        <tr>
+                            <td>Remplacement serrure 3 points</td>
+                            <td>180€ - 350€</td>
+                        </tr>
+                        <tr>
+                            <td>Remplacement serrure 5 points</td>
+                            <td>250€ - 450€</td>
+                        </tr>
+                        <tr>
+                            <td>Installation serrure multipoint A2P</td>
+                            <td>300€ - 600€</td>
+                        </tr>
+                        <tr>
+                            <td>Réparation de serrure endommagée</td>
+                            <td>70€ - 150€</td>
+                        </tr>
+                        <tr>
+                            <td>Reproduction de clé simple</td>
+                            <td>10€ - 30€</td>
+                        </tr>
+                        <tr>
+                            <td>Reproduction de clé sécurisée</td>
+                            <td>30€ - 80€</td>
+                        </tr>
+                        <tr>
+                            <td>Déblocage de serrure grippée</td>
+                            <td>60€ - 120€</td>
+                        </tr>
+                        <tr>
+                            <td>Extraction de clé cassée dans serrure</td>
+                            <td>70€ - 130€</td>
+                        </tr>
+                        <tr>
+                            <td>Blindage de porte existante</td>
+                            <td>500€ - 1200€</td>
+                        </tr>
+                        <tr>
+                            <td>Installation porte blindée complète</td>
+                            <td>1500€ - 3500€</td>
+                        </tr>
+                        <tr>
+                            <td>Dépannage après effraction (sécurisation)</td>
+                            <td>100€ - 250€</td>
+                        </tr>
+                        <tr>
+                            <td>Installation verrou supplémentaire</td>
+                            <td>80€ - 180€</td>
+                        </tr>
+                        <tr>
+                            <td>Déplacement (inclus dans la prestation)</td>
+                            <td>Offert - 50€</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pricing-note">
+                <strong>ℹ️ Important à savoir :</strong>
+                <ul>
+                    <li>Les tarifs indiqués sont des fourchettes moyennes constatées en France</li>
+                    <li>Le prix final dépend de la complexité, du matériel, de l'horaire et de votre localisation</li>
+                    <li>Un devis gratuit vous sera communiqué avant toute intervention</li>
+                    <li>Tarifs majorés possibles : nuit (20h-7h), dimanche et jours fériés</li>
+                    <li>Facture détaillée fournie pour remboursement par votre assurance habitation</li>
+                    <li>Aucune intervention ne sera réalisée sans votre accord sur le prix</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Couverture nationale -->
+    <section class="coverage" id="coverage">
+        <div class="container">
+            <h2 class="section-title">Un Serrurier Local Près de Chez Vous</h2>
+            <div class="coverage-content">
+                <p>Notre réseau de serruriers professionnels locaux nous permet de vous mettre en relation avec un artisan qualifié proche de votre domicile. Où que vous soyez, nous trouvons rapidement le serrurier le plus proche pour une intervention express.</p>
+                
+                <strong>🏘️ Service local disponible 24h/24 et 7j/7</strong>
+                
+                <p>Grâce à notre organisation nationale et notre réseau de partenaires locaux, nous pouvons vous envoyer un serrurier de votre secteur en quelques minutes. Chaque intervention est assurée par un professionnel de votre région, garantissant une connaissance du terrain, un temps de déplacement réduit et une réactivité optimale.</p>
+                
+                <p>Un seul numéro, un serrurier près de chez vous : <strong>09 72 49 72 49</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avis Clients -->
+    <section class="reviews">
+        <div class="container">
+            <h2 class="section-title">Ce que disent nos clients</h2>
+            <p class="section-subtitle">Des milliers de clients satisfaits nous font confiance chaque année</p>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Intervention ultra rapide à 2h du matin. Le serrurier est arrivé en 25 minutes et a ouvert ma porte sans l'abîmer. Service impeccable !"</p>
+                    <div class="review-author">Sophie M.</div>
+                    <div class="review-location">Paris 15ème</div>
+                    <div class="review-date">Il y a 3 jours</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Excellent service. Après un cambriolage, ils ont changé ma serrure le soir même. Facture détaillée pour l'assurance. Je recommande !"</p>
+                    <div class="review-author">Thomas B.</div>
+                    <div class="review-location">Lyon 6ème</div>
+                    <div class="review-date">Il y a 1 semaine</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Très professionnel. Prix annoncé au téléphone, respecté sur place. Le serrurier a pris le temps de m'expliquer. Parfait."</p>
+                    <div class="review-author">Marie D.</div>
+                    <div class="review-location">Marseille 8ème</div>
+                    <div class="review-date">Il y a 2 semaines</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Porte claquée un dimanche. Intervention en 30 minutes. Serrurier compétent et sympathique. Très bonne expérience."</p>
+                    <div class="review-author">Laurent P.</div>
+                    <div class="review-location">Toulouse</div>
+                    <div class="review-date">Il y a 2 semaines</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Service sérieux. J'ai perdu mes clés, changement de serrure rapide. Facture claire et acceptée par mon assurance Axa."</p>
+                    <div class="review-author">Isabelle R.</div>
+                    <div class="review-location">Bordeaux</div>
+                    <div class="review-date">Il y a 3 semaines</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Intervention d'urgence en pleine nuit. Réactif, efficace et tarif correct. Je garde le numéro précieusement."</p>
+                    <div class="review-author">Vincent L.</div>
+                    <div class="review-location">Lille</div>
+                    <div class="review-date">Il y a 1 mois</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Très satisfaite. Serrure 3 points installée rapidement après effraction. Travail soigné et serrurier à l'écoute."</p>
+                    <div class="review-author">Céline H.</div>
+                    <div class="review-location">Nantes</div>
+                    <div class="review-date">Il y a 1 mois</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Rien à redire. Service rapide, prix transparent, travail bien fait. C'est ce qu'on attend dans l'urgence."</p>
+                    <div class="review-author">Pierre F.</div>
+                    <div class="review-location">Strasbourg</div>
+                    <div class="review-date">Il y a 1 mois</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Réassurance -->
+    <section class="trust">
+        <div class="container">
+            <h2 class="section-title">Votre tranquillité d'esprit avant tout</h2>
+            
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-item-icon">⭐</div>
+                    <h3>Clients satisfaits</h3>
+                    <p>Des milliers d'interventions réussies chaque année partout en France.</p>
+                    <div class="testimonial">
+                        "Intervention rapide et efficace. Le serrurier est arrivé en 30 minutes et a ouvert ma porte sans l'abîmer. Facture claire pour l'assurance."
+                        <div class="testimonial-author">— Marie L., Paris</div>
+                    </div>
+                </div>
+
+                <div class="trust-item">
+                    <div class="trust-item-icon">🛡️</div>
+                    <h3>Sécurité garantie</h3>
+                    <p>Intervention professionnelle avec respect de votre domicile et de votre sécurité.</p>
+                    <div class="testimonial">
+                        "Après un cambriolage, ils ont sécurisé ma porte le soir même. Installation d'une nouvelle serrure de qualité. Service impeccable."
+                        <div class="testimonial-author">— Thomas B., Lyon</div>
+                    </div>
+                </div>
+
+                <div class="trust-item">
+                    <div class="trust-item-icon">💬</div>
+                    <h3>Devis avant travaux</h3>
+                    <p>Prix annoncé avant intervention. Vous décidez en toute connaissance de cause.</p>
+                    <div class="testimonial">
+                        "J'ai apprécié la transparence : devis par téléphone, confirmation sur place avant l'ouverture. Aucune surprise sur la facture."
+                        <div class="testimonial-author">— Sophie D., Marseille</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Questions fréquentes sur la serrurerie et l'assurance</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    L'assurance habitation rembourse-t-elle un serrurier ?
+                </div>
+                <div class="faq-answer">
+                    Cela dépend de votre contrat d'assurance habitation et de la situation. Généralement, l'assurance peut couvrir les frais de serrurier en cas de vol, tentative d'effraction, perte de clés (si l'option est souscrite) ou porte claquée (avec garantie assistance). Nous vous recommandons de contacter votre assureur pour connaître précisément vos droits. Nous vous fournirons une facture détaillée pour votre dossier de remboursement.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Quand faut-il appeler un serrurier en urgence ?
+                </div>
+                <div class="faq-answer">
+                    Vous devez appeler un serrurier en urgence dans plusieurs situations : porte claquée avec les clés à l'intérieur, clé cassée dans la serrure, serrure bloquée, perte ou vol de clés, tentative d'effraction ou cambriolage, serrure endommagée ne permettant plus de fermer votre porte. Dans tous ces cas, notre service d'urgence 24h/24 et 7j/7 est à votre disposition.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Intervenez-vous vraiment partout en France ?
+                </div>
+                <div class="faq-answer">
+                    Oui, notre réseau de serruriers professionnels couvre l'ensemble de la France métropolitaine. Que vous soyez dans une grande ville, une petite commune ou en zone rurale, nous mettons tout en œuvre pour vous envoyer un serrurier qualifié proche de chez vous le plus rapidement possible. Le temps d'intervention peut varier selon votre localisation, mais nous nous engageons à trouver une solution rapide avec un professionnel local.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Fournissez-vous une facture pour l'assurance habitation ?
+                </div>
+                <div class="faq-answer">
+                    Absolument. Nous vous fournissons systématiquement une facture détaillée et conforme aux exigences des compagnies d'assurance. Cette facture comprend la description précise de l'intervention, le détail des pièces utilisées, la main d'œuvre, et toutes les informations nécessaires pour constituer votre dossier de remboursement auprès de votre assurance habitation.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-final">
+        <div class="container">
+            <h2>Besoin d'un serrurier maintenant ?</h2>
+            <p>Appelez-nous immédiatement. Un serrurier local près de chez vous disponible 24h/24 et 7j/7.</p>
+            <a href="tel:0972497249" class="phone-link">📞 09 72 49 72 49</a>
+        </div>
+    </section>
+
+    <!-- Bannière Assurances -->
+    <section class="insurance-banner">
+        <div class="container">
+            <p class="insurance-intro">Facture acceptée par les principales assurances en France</p>
+            <div class="insurance-logos">
+                <div class="insurance-item" data-brand="axa">AXA</div>
+                <div class="insurance-item" data-brand="allianz">Allianz</div>
+                <div class="insurance-item" data-brand="groupama">Groupama</div>
+                <div class="insurance-item" data-brand="maif">MAIF</div>
+                <div class="insurance-item" data-brand="maaf">MAAF</div>
+                <div class="insurance-item" data-brand="matmut">Matmut</div>
+                <div class="insurance-item" data-brand="mma">MMA</div>
+                <div class="insurance-item" data-brand="gmf">GMF</div>
+                <div class="insurance-item" data-brand="macif">Macif</div>
+                <div class="insurance-item" data-brand="generali">Generali</div>
+                <div class="insurance-item" data-brand="aviva">Aviva</div>
+                <div class="insurance-item" data-brand="swisslife">Swiss Life</div>
+                <div class="insurance-item" data-brand="ca">Crédit Agricole</div>
+                <div class="insurance-item" data-brand="ag2r">AG2R La Mondiale</div>
+                <div class="insurance-item" data-brand="pacifica">Pacifica</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Serrurier Assurance Habitation</h4>
+                <p>Service de serrurerie d'urgence disponible 24h/24 et 7j/7. Serrurier local proche de chez vous.</p>
+                <p style="margin-top: 1rem;"><strong>Téléphone : 09 72 49 72 49</strong></p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Nos services</h4>
+                <a href="#interventions">Porte claquée</a>
+                <a href="#interventions">Serrure cassée</a>
+                <a href="#interventions">Clé perdue</a>
+                <a href="#interventions">Effraction</a>
+                <a href="#pricing">Tarifs serrurerie</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Informations</h4>
+                <a href="#assurance">Assurance habitation</a>
+                <a href="#faq">Questions fréquentes</a>
+                <a href="#why-us">Pourquoi nous choisir</a>
+                <a href="#coverage">Serrurier près de chez vous</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Légal</h4>
+                <a href="tel:0972497249">📞 Nous contacter</a>
+                <p style="color: rgba(255,255,255,0.6); margin-top: 1rem; font-size: 0.9rem;">
+                    Les pages légales seront disponibles prochainement :<br>
+                    Mentions légales, Politique de confidentialité, Conditions générales
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Serrurier Assurance Habitation. Tous droits réservés. | Service de mise en relation avec des serruriers professionnels locaux.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.85rem;">Le remboursement par votre assurance habitation dépend de votre contrat et n'est pas garanti. Consultez votre assureur.</p>
+        </div>
+    </footer>
+
+    <!-- Bouton d'appel flottant (mobile) -->
+    <div class="floating-call">
+        <a href="tel:0972497249" class="phone-link">📞 Appeler : 09 72 49 72 49</a>
+    </div>
+
+    <!-- Schema.org JSON-LD pour le SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "L'assurance habitation rembourse-t-elle un serrurier ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Cela dépend de votre contrat d'assurance habitation et de la situation. Généralement, l'assurance peut couvrir les frais de serrurier en cas de vol, tentative d'effraction, perte de clés (si l'option est souscrite) ou porte claquée (avec garantie assistance). Nous vous recommandons de contacter votre assureur pour connaître précisément vos droits."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Quand faut-il appeler un serrurier en urgence ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Vous devez appeler un serrurier en urgence dans plusieurs situations : porte claquée avec les clés à l'intérieur, clé cassée dans la serrure, serrure bloquée, perte ou vol de clés, tentative d'effraction ou cambriolage, serrure endommagée ne permettant plus de fermer votre porte."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Intervenez-vous vraiment partout en France ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui, notre réseau de serruriers professionnels couvre l'ensemble de la France métropolitaine. Que vous soyez dans une grande ville, une petite commune ou en zone rurale, nous mettons tout en œuvre pour vous envoyer un serrurier qualifié le plus rapidement possible."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Fournissez-vous une facture pour l'assurance habitation ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolument. Nous vous fournissons systématiquement une facture détaillée et conforme aux exigences des compagnies d'assurance. Cette facture comprend la description précise de l'intervention, le détail des pièces utilisées, la main d'œuvre, et toutes les informations nécessaires pour constituer votre dossier de remboursement."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://serrurierassurancehabitation.fr",
+        "name": "Serrurier Assurance Habitation",
+        "description": "Service de serrurerie d'urgence 24h/24 et 7j/7 dans toute la France. Facture conforme pour assurance habitation.",
+        "url": "https://serrurierassurancehabitation.fr",
+        "telephone": "+33972497249",
+        "areaServed": {
+            "@type": "Country",
+            "name": "France"
+        },
+        "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59",
+        "priceRange": "€€",
+        "serviceType": "Serrurerie d'urgence"
+    }
+    </script>
+</body>
+</html>
